@@ -1,0 +1,4 @@
+# Core benchmark (oracle, generator, scoring, runner) uses ONLY the standard
+# library. The two entries below are the only external needs:
+tzdata>=2024.1   # IANA tz database for zoneinfo on platforms without a system copy (e.g. Windows)
+pytest>=8.0      # test suite only

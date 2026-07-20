@@ -1,0 +1,25 @@
+{
+  "n": 20,
+  "overall": 0.7,
+  "by_task": {
+    "add_duration": 0.6666666666666666,
+    "classify": 0.6666666666666666,
+    "convert": 1.0,
+    "elapsed": 0.25
+  },
+  "by_transition_type": {
+    "cross_dst": 1.0,
+    "fall_back": 0.42857142857142855,
+    "none": 1.0,
+    "spring_forward": 0.5
+  },
+  "by_difficulty": {
+    "easy": 1.0,
+    "hard": 0.6
+  },
+  "off_by_one_hour": 0.5,
+  "usage": {
+    "prompt_tokens": 2203,
+    "completion_tokens": 10764
+  }
+}

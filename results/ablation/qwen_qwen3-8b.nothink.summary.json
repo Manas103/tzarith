@@ -1,0 +1,27 @@
+{
+  "n": 250,
+  "overall": 0.512,
+  "by_task": {
+    "add_duration": 0.36363636363636365,
+    "classify": 0.7538461538461538,
+    "convert": 0.5882352941176471,
+    "elapsed": 0.3064516129032258
+  },
+  "by_transition_type": {
+    "cross_dst": 0.6078431372549019,
+    "fall_back": 0.16901408450704225,
+    "none": 0.8795180722891566,
+    "spring_forward": 0.26666666666666666
+  },
+  "by_difficulty": {
+    "easy": 0.8,
+    "hard": 0.44
+  },
+  "off_by_one_hour": 0.8095238095238095,
+  "usage": {
+    "prompt_tokens": 29761,
+    "completion_tokens": 133541
+  },
+  "truncated": 0,
+  "reasoning": "off"
+}

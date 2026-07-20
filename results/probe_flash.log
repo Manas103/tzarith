@@ -1,0 +1,39 @@
+[gemini-2.5-flash] 1/20 acc=0.0% tok=985
+[gemini-2.5-flash] 2/20 acc=50.0% tok=1117
+[gemini-2.5-flash] 3/20 acc=33.3% tok=1783
+[gemini-2.5-flash] 4/20 acc=50.0% tok=2538
+[gemini-2.5-flash] 5/20 acc=60.0% tok=3018
+[gemini-2.5-flash] 6/20 acc=50.0% tok=3837
+[gemini-2.5-flash] 7/20 acc=57.1% tok=4252
+[gemini-2.5-flash] 8/20 acc=62.5% tok=4406
+[gemini-2.5-flash] 9/20 acc=66.7% tok=4831
+[gemini-2.5-flash] 10/20 acc=70.0% tok=5625
+[gemini-2.5-flash] 11/20 acc=63.6% tok=6449
+[gemini-2.5-flash] 12/20 acc=66.7% tok=6918
+[gemini-2.5-flash] 13/20 acc=69.2% tok=7468
+[gemini-2.5-flash] 14/20 acc=71.4% tok=7889
+[gemini-2.5-flash] 15/20 acc=73.3% tok=8524
+[gemini-2.5-flash] 16/20 acc=68.8% tok=9260
+[gemini-2.5-flash] 17/20 acc=70.6% tok=9417
+[gemini-2.5-flash] 18/20 acc=72.2% tok=9658
+[gemini-2.5-flash] 19/20 acc=68.4% tok=10403
+[gemini-2.5-flash] 20/20 acc=70.0% tok=10764
+# gemini-2.5-flash
+n = 20
+overall accuracy: 70.0%
+
+by task:
+  add_duration   66.7%
+  classify       66.7%
+  convert        100.0%
+  elapsed        25.0%
+by transition type:
+  cross_dst      100.0%
+  fall_back      42.9%
+  none           100.0%
+  spring_forward 50.0%
+by difficulty:
+  easy           100.0%
+  hard           60.0%
+off-by-one-hour share of wall-clock errors: 50.0%
+tokens: 2,203 in / 10,764 out

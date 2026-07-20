@@ -1,0 +1,34 @@
+[gemini-3.1-pro-preview] 1/15 acc=100.0% tok=284
+[gemini-3.1-pro-preview] 2/15 acc=100.0% tok=581
+[gemini-3.1-pro-preview] 3/15 acc=100.0% tok=1088
+[gemini-3.1-pro-preview] 4/15 acc=100.0% tok=1543
+[gemini-3.1-pro-preview] 5/15 acc=100.0% tok=1898
+[gemini-3.1-pro-preview] 6/15 acc=100.0% tok=2301
+[gemini-3.1-pro-preview] 7/15 acc=100.0% tok=2684
+[gemini-3.1-pro-preview] 8/15 acc=100.0% tok=2963
+[gemini-3.1-pro-preview] 9/15 acc=100.0% tok=3200
+[gemini-3.1-pro-preview] 10/15 acc=100.0% tok=3669
+[gemini-3.1-pro-preview] 11/15 acc=100.0% tok=4244
+[gemini-3.1-pro-preview] 12/15 acc=100.0% tok=4672
+[gemini-3.1-pro-preview] 13/15 acc=100.0% tok=4879
+[gemini-3.1-pro-preview] 14/15 acc=100.0% tok=5281
+[gemini-3.1-pro-preview] 15/15 acc=100.0% tok=5690
+# gemini-3.1-pro-preview
+n = 15
+overall accuracy: 100.0%
+
+by task:
+  add_duration   100.0%
+  classify       100.0%
+  convert        100.0%
+  elapsed        100.0%
+by transition type:
+  cross_dst      100.0%
+  fall_back      100.0%
+  none           100.0%
+  spring_forward 100.0%
+by difficulty:
+  easy           100.0%
+  hard           100.0%
+off-by-one-hour share of wall-clock errors: 0.0%
+tokens: 1,664 in / 5,690 out
