@@ -1,7 +1,7 @@
-# tzarith — a contamination-proof benchmark for LLM time-zone & DST arithmetic
+# tzarith: a contamination-proof benchmark for LLM time-zone & DST arithmetic
 
 `tzarith` measures how well language models do **temporal arithmetic across
-daylight-saving-time and time-zone transitions** — the spring-forward gaps,
+daylight-saving-time and time-zone transitions**, the spring-forward gaps,
 fall-back overlaps, and cross-zone DST mismatches that existing temporal
 benchmarks (Test of Time, PRIMETIME, GeoTemp, SPAN) either skip or only touch
 incidentally.
@@ -15,7 +15,7 @@ Two properties make it different:
    transition, and every question is checked to be well-posed (unambiguous).
 2. **Contamination-proof by construction.** Items are procedurally generated on
    demand, so the benchmark can't leak into training data. Ground truth comes from
-   Python's stdlib `zoneinfo` (the IANA tz database) — **no LLM judge, no human
+   Python's stdlib `zoneinfo` (the IANA tz database): **no LLM judge, no human
    annotation, zero scoring cost.**
 
 ## Install
@@ -32,7 +32,7 @@ The core library (oracle, generator, scoring) is **pure standard library**.
 # 1. See sample items with their oracle answers (hand-check the ground truth):
 python scripts/hand_check.py --n 12
 
-# 2. $0 smoke test of the whole pipeline (no API key — a naive stand-in model):
+# 2. $0 smoke test of the whole pipeline (no API key, a naive stand-in model):
 python scripts/run_eval.py --n 200 --backend dummy
 
 # 3. Freeze a citable eval split (fixed seed + manifest of oracle/tzdata versions):
@@ -63,10 +63,10 @@ kind of transition being stressed.
 
 ## What the harness reports
 
-Overall accuracy plus breakdowns by task, transition type, and difficulty — and
+Overall accuracy plus breakdowns by task, transition type, and difficulty, and
 the **off-by-one-hour share of wall-clock errors**, the fingerprint of naive
 (DST-ignoring) arithmetic. On the bundled naive stand-in model this is 100%, and
-accuracy drops from ~54% on ordinary times to 0% on every transition type — the
+accuracy drops from ~54% on ordinary times to 0% on every transition type: the
 failure signature the benchmark is designed to detect.
 
 ## Reproducibility
@@ -82,7 +82,7 @@ guarantee; the **frozen split** is for apples-to-apples model comparison.
 tzarith/
   oracle.py      ground truth: conversions, DST-aware arithmetic, transition finder
   generator.py   procedural item generation (oversamples hard cases)
-  scoring.py     lenient parsing, exact comparison — no LLM judge
+  scoring.py     lenient parsing, exact comparison (no LLM judge)
   runner.py      model backends (OpenAI-compatible + $0 dummy)
   analysis.py    accuracy tables + off-by-one-hour signature
 scripts/         hand_check · make_split · run_eval
